@@ -1,0 +1,301 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", sans-serif;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+a {
+    text-decoration: none;
+}
+/*--------------------------------------------*/
+
+body {
+    background-color: #FFFDFA;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 0;
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 44.98px;
+    height: 28px;
+}
+
+p {
+    line-height: 26px;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+h1, h3 {
+    color: #00001A;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.main-container2 h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #E9AA52;
+}
+
+.image-header {
+    width: 100%;
+}
+
+.main-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.c1, .c2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c2 {
+    
+}
+
+.main-container2 {
+    background-color: #00001A;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-container2 article {
+    color: white;
+
+}
+
+.main-container2 h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+
+.main-container2 h2 {
+    /* margin-bottom: 40px; */
+}
+
+article p {
+    color: #C5C6CE;
+}
+
+.c1 h1 {
+    font-size: 40px;
+    
+}
+
+.c2 a {
+    height: 48px;
+    width: 182px;
+    color: #FFFDFA;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    background-color: #F15D51;
+    border-style: none;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFDFA;
+}
+
+a, p {
+    color: #5E607A;
+}
+
+hr {
+    order: 1px solid #5E607A;
+    /* margin: 30px 0; */
+}
+
+section {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+section img {
+    width: 100px;
+    height: 127px;
+}
+
+section article {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+section h1 {
+    font-size: 32px;
+    color: #C5C6CE;
+}
+
+section h2 {
+    font-size: 18px;
+    font-weight: 800; 
+}
+
+section p {
+    color: #5E607A;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (min-width: 769px) {
+
+
+    nav {
+        display: block;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15px;
+        gap: 40px;
+    }
+
+    main {
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    header {
+        margin: 10vh 0;
+    }
+
+    .c1 {
+        flex-direction: row;
+        height: 50%;
+    }  
+    
+    .c1 h1, .c2 {
+        width: 50%;
+    }
+
+    .c1 h1 {
+        font-size: 56px;
+    }
+
+    .c1 h2 {
+        font-size: 40px;
+    }
+
+    .main-container1 {
+        max-width: 65%;
+
+    }
+
+    .maint-container2 {
+        height: 40%;
+    }
+
+    .image {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    section img {
+        width: 100px;
+        height: 127px;
+    }
+}
